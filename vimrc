@@ -72,12 +72,6 @@ nnoremap k gk
 " remove trailing whitespace
 map <leader>w :%s/\s\+$//g<CR>
 
-" Better window switching - already set by vim-tmux-navigator plugin
-" nnoremap <C-j> <C-w>j
-" nnoremap <C-k> <C-w>k
-" nnoremap <C-h> <C-w>h
-" nnoremap <C-l> <C-w>l
-
 """""""""""
 " Plugins "
 """""""""""
@@ -177,12 +171,6 @@ if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
   au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
 endif
-
-""let g:airline_theme='murmur'
-""let g:airline#extensions#tabline#enabled = 0
-""let g:airline_powerline_fonts = 1
-""let g:airline#extensiOns#syntastic#enabled = 0
-""let g:airline#extensions#tmuxline#enabled = 0
 
 " hint to keep lines short
 if exists('+colorcolumn')
