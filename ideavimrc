@@ -1,0 +1,8 @@
+" map , as leader
+let mapleader=","
+
+nnoremap <leader>r :action ReformatCode<CR>
+
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk

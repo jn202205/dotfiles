@@ -1,0 +1,27 @@
+[user]
+	name = Jonathan Newman
+	email = jn202205@gmail.com
+[core]
+	editor = mvim -v -c \"au VimLeave * !open -a iTerm\"
+	excludesfile = /Users/jon/.gitignore_global
+[color]
+	ui = true
+[push]
+	default = matching
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[alias]
+	co = checkout
+	cob = checkout -b

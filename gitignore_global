@@ -1,0 +1,10 @@
+*~
+*.swp
+*.swo
+tags
+gems.tags
+.DS_Store
+
+.idea
+
+.ruby-version
