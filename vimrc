@@ -91,6 +91,8 @@ let g:syntastic_warning_symbol = "⚠"
 highlight SyntasticErrorSign ctermbg=240
 highlight SyntasticWarningSign ctermbg=240
 
+command E Exp
+
 " vertical line indentation
 let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#09AA08'
@@ -126,6 +128,9 @@ let g:netrw_liststyle=3
 
 "use Dispatch or tslime to run vim-rspec commands
 let g:rspec_command = 'Dispatch rspec {spec}'
+
+" update ctags asynchronously
+let g:easytags_async = 1
 
 " javascript-libraries-syntax
 let g:used_javascript_libs = 'jquery,angularjs'
