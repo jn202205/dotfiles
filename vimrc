@@ -34,7 +34,7 @@ set shiftround                      " always indent to a multiple of shiftwidth
 set backspace=2                     " backspace deletes like most programs in insert mode
 set autoindent                      " set autoindenting on
 set smarttab                        " use smart tabs
-set relativenumber                  " use relative line numbering
+"set relativenumber                  " use relative line numbering
 set number                          " show current line number in vim >=7.4
 set numberwidth=3                   " set gutter 3 nums wide
 set ruler                           " show cursor position at all times
@@ -53,7 +53,6 @@ set clipboard=unnamed               "use system clipboard
 set laststatus=2                    " always display status line
 set ttimeoutlen=50
 set guitablabel=%t
-set lazyredraw                      "buffer screen updates instead of updating all the time
 
 "Open split panes to right and bottom
 set splitbelow
@@ -91,6 +90,8 @@ let g:syntastic_warning_symbol = "⚠"
 highlight SyntasticErrorSign ctermbg=240
 highlight SyntasticWarningSign ctermbg=240
 
+" use netrw like nerdtree
+let g:netrw_liststyle=3
 command E Exp
 
 " vertical line indentation
@@ -103,6 +104,9 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+"use Dispatch or tslime to run vim-rspec commands
+let g:rspec_command = 'Dispatch rspec {spec}'
 
 " ctrlp config
 nnoremap <silent> <leader>p :CtrlPClearCache<cr>\|:CtrlP<cr>
@@ -122,15 +126,6 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
-
-" use netrw like nerdtree
-let g:netrw_liststyle=3
-
-"use Dispatch or tslime to run vim-rspec commands
-let g:rspec_command = 'Dispatch rspec {spec}'
-
-" update ctags asynchronously
-let g:easytags_async = 1
 
 " javascript-libraries-syntax
 let g:used_javascript_libs = 'jquery,angularjs'
