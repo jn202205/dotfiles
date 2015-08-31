@@ -182,8 +182,6 @@ if exists('+colorcolumn')
   set colorcolumn=80
 endif
 
-"""""""""""""""
-"   Ctags     "
-"""""""""""""""
-set tags+=gems.tags
-autocmd BufWritePost * exe ":UpdateTags"
+" enable project specific vimrc files
+set exrc
+set secure
