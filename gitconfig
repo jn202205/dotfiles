@@ -25,3 +25,5 @@
 [alias]
 	co = checkout
 	cob = checkout -b
+[init]
+	templatedir = ~/.git_template
