@@ -16,9 +16,10 @@ plugins=(git bundler rails tmux)
 DISABLE_AUTO_TITLE=true
 
 # User configuration
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jon/bin"
+export PATH="/Users/jon/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+export EDITOR='vim'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,9 +44,10 @@ source $ZSH/oh-my-zsh.sh
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 # aliases
-alias vim="mvim -v"
 alias cwd='pwd | pbcopy'
 alias gctags='ctags -R --exclude=.git --exclude=log . $(bundle list --paths)'
+alias ruvixx='cd ~/Programming/sites/ruvixx'
+
 # Always work in a tmux session if tmux is installed
 #if which tmux 2>&1 >/dev/null; then
 #  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
