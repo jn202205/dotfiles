@@ -19,7 +19,7 @@ brew install zsh
 
 ### Install brew packages and symlink dotfiles
 ```
-git clone
+git clone https://github.com/jn202205/dotfiles.git ~/dotfiles
 ./brew.sh
 ./setup.sh
 ```
