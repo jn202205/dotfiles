@@ -10,6 +10,9 @@ if has("autocmd")
   " Enable filetype detection
   filetype plugin indent on
 
+  " wrap git commit text at 72 cols
+  autocmd Filetype gitcommit setlocal spell textwidth=72
+
   " Restore cursor position
   autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
@@ -90,9 +93,8 @@ let g:syntastic_warning_symbol = "⚠"
 highlight SyntasticErrorSign ctermbg=240
 highlight SyntasticWarningSign ctermbg=240
 
-" use netrw like nerdtree
-let g:netrw_liststyle=3
-command E Exp
+" toggle nerdtree
+nnoremap <C-e> :NERDTreeToggle<CR>
 
 " vertical line indentation
 let g:indentLine_color_term = 239

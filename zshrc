@@ -11,7 +11,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler rails tmux)
+plugins=(git rails tmux bundler)
 
 DISABLE_AUTO_TITLE=true
 
@@ -20,6 +20,8 @@ export PATH="/Users/jon/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export EDITOR='vim'
+
+source ~/.zshenv
 
 source $ZSH/oh-my-zsh.sh
 

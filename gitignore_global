@@ -11,3 +11,6 @@ gems.tags
 
 .vimrc
 
+custom_plan.rb
+zeus.json
+

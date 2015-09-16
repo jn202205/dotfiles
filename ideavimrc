@@ -3,6 +3,16 @@ let mapleader=","
 
 nnoremap <leader>r :action ReformatCode<CR>
 
+set number                          " show line numbers
+set expandtab                       " use spaces for tabs
+set ignorecase                      " ignorecase when searching
+set smartcase                       " override ignore case if search contains uppercase
+set hlsearch                        " highlight search terms
+set wildmenu                        " enable bash style tab completion
+set wildmode=list:longest,full
+set clipboard=unnamed               "use system clipboard
+set ttimeoutlen=50
+
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
