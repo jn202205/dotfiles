@@ -10,6 +10,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Define bundles via Github repos
+" /rking/ag.vim
+Plugin 'rking/ag.vim'
 Plugin 'jiangmiao/auto-pairs.git'
 Plugin 'chriskempson/base16-vim'
 Plugin 'ctrlpvim/ctrlp.vim'

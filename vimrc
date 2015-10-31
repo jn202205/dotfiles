@@ -118,6 +118,11 @@ let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " The Silver Searcher
+let g:ag_working_path_mode="r"
+
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor

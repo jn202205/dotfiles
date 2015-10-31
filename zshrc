@@ -48,7 +48,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 # aliases
 alias cwd='pwd | pbcopy'
 alias gctags='ctags -R --exclude=.git --exclude=log . $(bundle list --paths)'
-alias ruvixx='cd ~/Programming/sites/ruvixx'
 
 # Always work in a tmux session if tmux is installed
 #if which tmux 2>&1 >/dev/null; then
