@@ -1,9 +1,9 @@
 [user]
 	name = Jonathan Newman
-	email = jn202205@gmail.com
+	email = j24newman@gmail.com
 [core]
 	editor = mvim -v -c \"au VimLeave * !open -a iTerm\"
-	excludesfile = /Users/jon/.gitignore_global
+	excludesfile = /Users/jonathan/.gitignore_global
 [color]
 	ui = true
 [push]
@@ -27,3 +27,7 @@
 	cob = checkout -b
 [init]
 	templatedir = ~/.git_template
+[mergetool]
+	keepBackup = false
+[gui]
+	recentrepo = /Users/jonathan/rvx-rds

@@ -14,3 +14,7 @@ gems.tags
 custom_plan.rb
 zeus.json
 
+my_scrap.*
+
+doc/
+.yardoc/
