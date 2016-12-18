@@ -24,6 +24,9 @@ alias gctags='ctags -R --exclude=.git --exclude=log . $(bundle list --paths)'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias logdev='tail -f log/development.log'
+alias bstart='brew services start'
+alias bstop='brew services stop'
+alias blist='brew services list'
 
 # Always work in a tmux session if tmux is installed
 #if which tmux 2>&1 >/dev/null; then

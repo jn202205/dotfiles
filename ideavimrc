@@ -11,6 +11,8 @@ set wildmenu                        " enable bash style tab completion
 set wildmode=list:longest,full
 set clipboard=unnamed               "use system clipboard
 set ttimeoutlen=50
+" enable vim-surround commands
+set surround
 
 " move vertically by visual line
 nnoremap j gj

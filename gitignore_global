@@ -18,3 +18,13 @@ my_scrap.*
 
 doc/
 .yardoc/
+
+.dump.rdb.icloud
+
+*.icloud
+
+.rbenv-gemsets
+
+*rubocop.yml
+
+
