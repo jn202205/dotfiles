@@ -8,9 +8,7 @@
 	ui = true
 [push]
 	default = matching
-[difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -31,3 +29,5 @@
 	keepBackup = false
 [gui]
 	recentrepo = /Users/jonathan/rvx-rds
+[credential]
+	helper = osxkeychain

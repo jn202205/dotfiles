@@ -27,6 +27,7 @@ alias logdev='tail -f log/development.log'
 alias bstart='brew services start'
 alias bstop='brew services stop'
 alias blist='brew services list'
+alias brestart='brew services restart'
 
 # Always work in a tmux session if tmux is installed
 #if which tmux 2>&1 >/dev/null; then

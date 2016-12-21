@@ -6,10 +6,10 @@
 
 ########## Variables
 
-dir=~/dotfiles                    # dotfiles directory
-olddir=~/dotfiles_old             # old dotfiles backup directory
+dir=~/Documents/programming/dotfiles                    # dotfiles directory
+olddir=~/Documents/programming/dotfiles_old             # old dotfiles backup directory
 # list of files/folders to symlink in homedir
-files="gemrc git_template gitconfig gitignore_global ideavimrc railsrc rspec tmux.conf vimrc vimrc.bundles vim zshrc"
+files="ssh gemrc git_template gitconfig gitignore_global ideavimrc railsrc rspec tmux.conf pryrc vimrc vimrc.bundles vim zshrc"
 
 ##########
 
@@ -33,5 +33,5 @@ for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
     mv ~/.$file $olddir
     echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+    ln -sf $dir/$file ~/.$file
 done
